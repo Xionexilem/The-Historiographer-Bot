@@ -22,7 +22,7 @@ async def download_photo(file_id: str, file_path: str, bot: Bot):
 
 @router.message(CommandStart())
 async def cmd_start(message: Message):
-    await message.answer('Добро пожаловать в бот-энциклопедию!',
+    await message.answer('Добро пожаловать! Я Историограф бот.\n Я помогу найти информацию о личности.',
                          reply_markup=kb.main)
 
 
